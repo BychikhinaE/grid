@@ -1,0 +1,145 @@
+.container {
+  max-width: 1440px;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #e5e5e5;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+.logo {
+  width: 90px;
+  height: 36px;
+  object-fit: cover;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: 26px;
+  height: 26px;
+}
+.main{
+    padding-bottom: 100px;
+}
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  color: #211e1d;
+  display: block;
+  margin: 0;
+  padding-bottom: 70px;
+}
+.filter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  padding-bottom: 60px;
+  column-gap: 20px;
+}
+.filterItem {
+  /* display: flex;
+    flex-direction: column; */
+}
+.filterLabel {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.filterSelect {
+  /* display: block; */
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(33, 30, 29, 0.2);
+  min-height: 40px;
+}
+.filterOption {
+}
+.gallery {
+  display: grid;
+  gap: 50px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  list-style: none;
+  margin: 0;
+  padding: 0 0 80px 0;
+}
+.galleryItem {
+}
+.galleryImg {
+  display: block;
+}
+.galleryTitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.galleryPrice {
+  margin: 0;
+  padding: 0;
+}
+.galleryButton {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 105px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: inherit;
+  box-sizing: border-box;
+  border: 1px solid #211e1d;
+}
+.galleryButton:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 244px;
+  padding-top: 70px;
+  column-gap: 20px;
+  background-color: #DEDBD9;
+  box-sizing: border-box;
+}
+.copyright {
+}
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footerText {
+  padding-bottom: 20px;
+  margin: 0;
+  display: block;
+}
+.form {
+  justify-self: stretch;
+}
+.input {
+  background-color: inherit;
+  border: none;
+  height: 40px;
+  border-bottom: 1px solid rgba(33, 30, 29, 0.1);
+}
+.submit {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}

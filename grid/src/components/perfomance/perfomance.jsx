@@ -1,17 +1,18 @@
 import styles from "./perfomance.module.css";
-import logo from "../../images/Logotype.svg";
-import both from "../../images/1.png";
-import author from "../../images/2.png";
-import both2 from "../../images/3.png";
-import both3 from "../../images/4.png";
-import woman from "../../images/5.jpg";
-import woman2 from "../../images/6.png";
-import both4 from "../../images/7.png";
+import logo from "../../images/perfomance/Logotype.svg";
+import both from "../../images/perfomance/1.png";
+import author from "../../images/perfomance/2.png";
+import both2 from "../../images/perfomance/3.png";
+import both3 from "../../images/perfomance/4.png";
+import woman from "../../images/perfomance/5.jpg";
+import woman2 from "../../images/perfomance/6.png";
+import both4 from "../../images/perfomance/7.png";
 
 function Performance() {
   return (
-    <div className={styles.page}>
-      <header className={styles.header}>
+    <>
+    {/* // <div className={styles.page}> */}
+      <header className={`${styles.header} ${styles.page}`}>
         <img className={styles.logo} alt="Logo" src={logo} />
         <nav className={styles.nav}>
           <ul className={styles.nav__items}>
@@ -43,14 +44,14 @@ function Performance() {
           </ul>
         </nav>
       </header>
-      <main>
+      <main className={styles.page}> 
         <article className={styles.main}>
           <h1 className={styles.title}>
             Премьера вызывающе красивого спектакля от&nbsp;режиссера
             Жана&nbsp;Портье
           </h1>
           <div className={styles.description}>
-            <time datetime="2020-02-20" className={styles.text_small}>20.02.2020</time>
+            <time dateTime="2020-02-20" className={styles.text_small}>20.02.2020</time>
             <p className={styles.text_small}>Автор статьи: Кристина Петровна</p>
             <p className={styles.text_small}>Фотограф: Пьер Буше</p>
           </div>
@@ -162,13 +163,14 @@ function Performance() {
           </figure>
         </article>
       </main>
-      <footer className={styles.footer}>
+      <footer className={`${styles.footer} ${styles.page}`} >
         <a className={styles.logo} href="index.html">
           <img src={logo} alt="Главная страница сайта Performance" />
         </a>
         <p className={styles.copyright}>© 2021 Все права защищены</p>
       </footer>
-    </div>
+      </>
+  
   );
 }
 
